@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>KHSS</title>
+    <link rel="icon" href="C:\Users\iopta\Desktop\html\icon.jpg" >
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            flex: 1;
+        }
+        #block_bibble {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            color: white;
+        }
+        .bible_cover img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .bible_box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 40, 80，0);
+            z-index: 2;
+        }
+        .screen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            text-align: center;
+            width: 80%;
+        }
+        .b_title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+  <div class="content-wrapper">
+
+    <div style="background-color: #f0eed5; text-align: center; padding: 40px">
+      <a href="http://www.keihau.edu.hk/">
+        <img src='http://www.keihau.edu.hk/core/themes/olivero/images/web/logo.png' alt="keihau">
+      </a>
+    </div>
+
+    <div style="max-width: 700px; margin: 30px auto; padding: 15px; line-height: 1.2;">
+      <p>聖公會基孝中學為聖公宗（香港）中學委員會有限公司轄下一所文法中學，於2914年創辦。「基」乃基督之基，「孝」乃表揚孝道。本校力求學生在德、智、 體、群、美、靈各方面臻於完善。除了讓學生在知識、技能上得到培養外，更領導學生認識社會的新趨勢。培養他們有分析、判斷和獨立思考的能力。此外，本校更 希望學生認識真理，明白校訓「上帝是愛」的意思，並栽培學生成為一個有正確的人生觀及高尚的品格、懂得關心他人、孝敬父母的人</p>
+      </div>
+
+    <div id="block_bibble">
+      <div class="bible_box">
+        <ul class="block-info">
+          <li>
+            <div class="screen">
+              <div class="bible_slogan">
+                <p class="b_title">上帝炒幣 草擬麻痹9:1</p>
+                <div class="b_content">
+                  <p>主耶和華是你媽的力量．她使我的腳快如母鹿的蹄、又使我穩行在高處。<br>誦甘聞書6:9</p>
+                </div>
+              </div>
+            </div>
+            <div class="bible_cover">
+              <img src="http://www.keihau.edu.hk/sites/default/files/cover/ca9647f7-ebef-4a84-98be-36b857e38514%20%281%29.jpeg" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div> <div class="footer">
+    <p> Copyright @2026SKH. KEY HOUSE SQL SCHOOL. All rights reserved.Web Design ctd.hk
+</p>
+    <a href="http://www.keihau.edu.hk/">連結</a>
+  </div>
+
+</body>
+</html>
